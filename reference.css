@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Renogare-Regular;
+    src: url("fonts/Renogare-Regular.otf");
+}
+
+.title {
+    font-family: Renogare-Regular;
+    font-size: 40px;
+    text-shadow: 1px 1px 10px black;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.animate {
+    animation: fadeIn ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        margin-top: 5%;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 10%;
+    }
+}
+
+.subtitleanimate {
+    animation: fadeIn2 ease-in-out 1s 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn2 {
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.subtitle {
+    font-family: Renogare-Regular;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    font-size: 25px;
+    text-shadow: 1px 1px 10px black;
+    padding: 20px 50px;
+    opacity: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro1 {
+    font-family: Renogare-Regular;
+    text-align: center;
+}
+
+.text {
+    font-family: Renogare-Regular;
+    font-size: 29px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.text-small {
+    font-family: Renogare-Regular;
+    font-size: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.box1 {
+    background-color: rgb(255, 177, 75);
+    border: 3px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 5px;
+    opacity: 100%;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.box1:hover {
+    background-color: rgb(255, 206, 132);
+    box-shadow: 0px 3px 3px 2px rgb(36, 36, 36);
+    transform: scale(105%);
+}
+
+.box2 {
+    background-color: rgb(181, 102, 255);
+    border: 3px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 5px;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.box2:hover {
+    background-color: rgb(215, 147, 255);
+    box-shadow: 0px 3px 3px 2px rgb(36, 36, 36);
+    transform: scale(105%);
+}
+
+.box3 {
+    background-color: rgb(0, 165, 194);
+    border: 3px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 5px;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.box3:hover {
+    background-color: rgb(95, 231, 255);
+    box-shadow: 0px 3px 3px 2px rgb(36, 36, 36);
+    transform: scale(105%);
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media only screen and (min-width: 1700px) {
+    .columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.all {
+    margin: 200px;
+}
+
+.columns>* {
+    animation: fadeIn3 ease-in-out 1s 0.25s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn3 {
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .all {
+        margin: 100px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .all {
+        margin: 25px;
+    }
+}
+
+.img-center {
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    font-family: Renogare-Regular;
+    color: grey;
+}
+
+.button {
+    background-color: rgb(255, 197, 88);
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgb(255, 202, 122);
+    box-shadow: 0px 3px 3px 2px rgb(36, 36, 36);
+    transform: scale(105%);
+}
+
+ul {
+    list-style-type: none;
+    background-color: rgb(36, 36, 36);
+    margin: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 10px 10px;
+    background-color: #292929;
+    color: white;
+    font-family: Renogare-Regular;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color ease-in-out 0.25s;
+}
+
+li a:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+.nbselected {
+    background-color: rgb(114, 82, 255);
+}

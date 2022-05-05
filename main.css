@@ -1,0 +1,85 @@
+:root {
+    --purple: #9a6bff;
+}
+
+@font-face {
+    font-family: Renogare-Regular;
+    src: url("Renogare-Regular.otf");
+}
+
+div {
+    font-family: Renogare-Regular;
+}
+
+p {
+    margin-bottom: 0;
+    font-family: Renogare-Regular;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.title {
+    font-size: 5em;
+    text-align: center;
+    color: white;
+}
+
+.subtitle {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: auto;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    color: rgb(20, 18, 29);
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+
+.box {
+    border: 3px solid;
+    border-color: var(--purple);
+    overflow: hidden;
+    border-radius: 5px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.boxA {
+    background-color: var(--purple);
+    border-radius: 5px;
+    height: 0%;
+    transition: height ease-in-out 0.25s, transform ease-in-out 0.25s, box-shadow ease-in-out 0.25s;
+    width: 255px;
+    margin: 0 auto;
+}
+
+.boxA:hover {
+    height: 100%;
+    transform: scale(105%);
+    box-shadow: #9a6bff 0px 0px 100px;
+}
+
+.boxT {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.imgcenter {
+    text-align: center;
+}
