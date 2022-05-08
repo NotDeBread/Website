@@ -1,0 +1,137 @@
+:root {
+    --purple: rgb(154, 107, 255);
+    --bg: rgb(26, 23, 37);
+    --grey: rgb(114, 114, 114);
+    --box: rgb(20, 18, 31);
+    --box-hover: rgb(255, 229, 143);
+    --box-shadow: rgb(80, 71, 42);
+}
+
+@font-face {
+    font-family: Renogare-Regular;
+    src: url("Renogare-Regular.otf");
+}
+
+div {
+    font-family: Renogare-Regular;
+}
+
+p {
+    margin-bottom: 0;
+    font-family: Renogare-Regular;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.title {
+    font-size: 5em;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to right, #6682ff, #7d66ff, #a66fff, #7d66ff, #6682ff);
+    background-size: 600px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {}
+    100% {
+        background-position: 600px;
+    }
+}
+
+.imgcenter {
+    text-align: center;
+}
+
+.box1 {
+    background-color: var(--box);
+    width: 250px;
+    border-radius: 5px;
+    border: var(--grey) solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin: auto;
+    transition: transform ease-in-out 0.25s, border ease-in-out 0.25s, border-width ease-in-out 0.25s, box-shadow ease-in-out 0.25s;
+    margin-top: 100px;
+}
+
+.box1:hover {
+    transform: scale(105%);
+    border: var(--box-hover) solid;
+    border-width: 1px;
+    box-shadow: var(--box-shadow) 0px 0px 50px;
+}
+
+.box1-text {
+    color: var(--grey);
+    text-align: center;
+    font-size: 2em;
+    transition: color ease-in-out 0.25s;
+}
+
+.box1-textS {
+    color: var(--grey);
+    text-align: center;
+    font-size: 1.5em;
+    transition: ease-in-out 0.25s;
+}
+
+.img-shadow {
+    position: absolute;
+    width: 250px;
+    height: 167px;
+    box-shadow: inset 0px 0px 20px 20px var(--box);
+    margin-top: -170px;
+}
+
+.line {
+    background-color: var(--grey);
+    width: 250px;
+    height: 1px;
+    margin-top: 19px;
+    transition: background-color ease-in-out 0.25s;
+}
+
+div:hover .line {
+    background-color: var(--box-hover);
+}
+
+div:hover .box1-text {
+    color: var(--box-hover);
+}
+
+div:hover .box1-textS {
+    color: var(--box-hover);
+}
+
+.backbutton {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+}
+
+.backbuttonbox {
+    background-color: var(--box);
+    border: var(--purple) solid;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 30px;
+    transition: transform ease-in-out 0.25s, opacity ease-in-out 0.25s;
+    opacity: 0.50;
+    top: 0;
+    left: 0;
+}
+
+.backbuttonbox:hover {
+    transform: scale(105%);
+    opacity: 100%;
+}

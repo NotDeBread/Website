@@ -28,7 +28,19 @@ html {
 .title {
     font-size: 5em;
     text-align: center;
-    color: white;
+    color: transparent;
+    background: linear-gradient(to right, #6682ff, #7d66ff, #a66fff, #7d66ff, #6682ff);
+    background-size: 600px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {}
+    100% {
+        background-position: 600px;
+    }
 }
 
 .subtitle {
@@ -58,6 +70,7 @@ html {
     width: 250px;
     margin: 0 auto;
     box-shadow: #9a6bff 0px 0px 5px;
+    top: 20em;
 }
 
 .boxA {
