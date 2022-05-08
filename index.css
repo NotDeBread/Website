@@ -1,5 +1,6 @@
 :root {
-    --purple: #9a6bff;
+    --purple: rgb(154, 107, 255);
+    --bg: rgb(26, 23, 37)
 }
 
 @font-face {
@@ -56,6 +57,7 @@ html {
     border-radius: 5px;
     width: 250px;
     margin: 0 auto;
+    box-shadow: #9a6bff 0px 0px 5px;
 }
 
 .boxA {
@@ -77,7 +79,12 @@ html {
     font-size: 2rem;
     text-align: center;
     margin: auto;
-    color: white;
+    color: var(--purple);
+    transition: color ease-in-out 0.25s;
+}
+
+.boxT:hover {
+    color: var(--bg);
 }
 
 .imgcenter {
