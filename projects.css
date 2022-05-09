@@ -135,3 +135,10 @@ div:hover .box1-textS {
     transform: scale(105%);
     opacity: 100%;
 }
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    opacity: 25%;
+    color: white;
+}
